@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Jadwal Laboratorium Komputer</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 18px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+
+        table {
+            width: 95%;
+            margin: auto;
+            border: 2px solid #555;
+            border-spacing: 2px;
+            table-layout: fixed;
+        }
+
+        th, td {
+            border: 2px solid #666;
+            padding: 5px 3px;
+            text-align: left;
+            vertical-align: middle;
+            overflow-wrap: break-word;
+        }
+
+        th {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .hari {
+            width: 8%;
+        }
+
+        .waktu {
+            width: 16%;
+        }
+
+        .keterangan {
+            width: 25%;
+        }
+
+        .tengah {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<h2>Jadwal Laboratorium Komputer</h2>
+
+<table>
+    <tr>
+        <th class="hari" rowspan="2">Hari</th>
+        <th colspan="2">Pagi</th>
+        <th colspan="2">Siang</th>
+        <th class="keterangan" rowspan="2">Keterangan</th>
+    </tr>
+
+    <tr>
+        <th class="waktu">08:00 - 10:00</th>
+        <th class="waktu">10:00 - 12:00</th>
+        <th class="waktu">13:00 - 15:00</th>
+        <th class="waktu">15:00 - 17:00</th>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Senin</td>
+        <td>Web 1</td>
+        <td>Web 2</td>
+        <td colspan="2">Praktikum Basis Data</td>
+        <td rowspan="2">Normal</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Praktikum Pemrograman</td>
+        <td>Jaringan</td>
+        <td>Jaringan</td>
+    </tr>
+
+    <tr>
+        <td>Selasa</td>
+        <td colspan="2">Seminar</td>
+        <td>Mobile</td>
+        <td>Mobile</td>
+        <td>Seminar Pagi</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2">Rabu</td>
+        <td>Web</td>
+        <td>Web</td>
+        <td colspan="2" rowspan="2">
+            Maintenance Laboratorium
+        </td>
+        <td rowspan="2">Maintenance</td>
+    </tr>
+
+    <tr>
+        <td colspan="2">Basis Data</td>
+    </tr>
+
+    <tr>
+        <td>Kamis</td>
+        <td>Algoritma</td>
+        <td>Algoritma</td>
+        <td colspan="2">Praktikum Jaringan</td>
+        <td>Normal</td>
+    </tr>
+
+    <tr>
+        <th colspan="5">Catatan</th>
+        <td>Jadwal dapat berubah</td>
+    </tr>
+</table>
+
+</body>
+</html>

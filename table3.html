@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Nilai Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            padding: 20px;
+            color: #333;
+        }
+        h2 {
+            margin-bottom: 5px;
+            font-size: 22px;
+        }
+        p {
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #555;
+        }
+        /* Style Utama Tabel */
+        .main-table {
+            border-collapse: collapse;
+            width: 100%;
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .main-table th, .main-table td {
+            border: 1px solid #b8c4d9;
+            padding: 10px 12px;
+            text-align: center;
+        }
+        /* Warna Header */
+        .main-table th {
+            background-color: #8c96c6;
+            color: white;
+            font-weight: bold;
+        }
+        /* Perataan khusus teks nama dan catatan */
+        .text-left {
+            text-align: left !important;
+        }
+        /* Baris Rata-rata Kelas */
+        .row-avg {
+            background-color: #f0f2f5;
+            font-weight: bold;
+        }
+        /* Pewarnaan Keterangan Status */
+        .status-remedial {
+            color: #d9534f;
+            font-weight: bold;
+        }
+        /* Styling Sub-tabel Kehadiran di dalam Kolom */
+        .sub-table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .sub-table th, .sub-table td {
+            border: 1px solid #b8c4d9;
+            padding: 4px 8px;
+            font-size: 13px;
+        }
+        .sub-table th {
+            background-color: #a3adc9;
+            color: white;
+        }
+        .sub-table td {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Table 1</h2>
+    <p>Laporan Nilai Mahasiswa TI-2024</p>
+
+    <table class="main-table">
+        <thead>
+            <tr>
+                <th rowspan="2" style="width: 15%;">Nama</th>
+                <th colspan="3">Semester 1</th>
+                <th colspan="3">Semester 2</th>
+                <th rowspan="2" style="width: 12%;">Keterangan</th>
+                <th rowspan="2" style="width: 30%;">Catatan Kehadiran</th>
+            </tr>
+            <tr>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Baris 1: Andi Pratama -->
+            <tr>
+                <td class="text-left">Andi Pratama</td>
+                <td>85</td>
+                <td>80</td>
+                <td>88</td>
+                <td>90</td>
+                <td>85</td>
+                <td>92</td>
+                <td>Lulus</td>
+                <td>
+                    <!-- Sub-tabel kehadiran -->
+                    <table class="sub-table">
+                        <thead>
+                            <tr>
+                                <th>Bulan</th>
+                                <th>Hadir</th>
+                                <th>Izin</th>
+                                <th>Alpa</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Agustus</td>
+                                <td>14</td>
+                                <td>1</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>September</td>
+                                <td>13</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <!-- Baris 2: Budi Santoso -->
+            <tr>
+                <td class="text-left">Budi Santoso</td>
+                <td>60</td>
+                <td>55</td>
+                <td>58</td>
+                <td>65</td>
+                <td>60</td>
+                <td>62</td>
+                <td class="status-remedial">Remedial</td>
+                <td class="text-left">Sering terlambat</td>
+            </tr>
+            <!-- Baris 3: Citra Lestari -->
+            <tr>
+                <td class="text-left">Citra Lestari</td>
+                <td>92</td>
+                <td>90</td>
+                <td>95</td>
+                <td>94</td>
+                <td>91</td>
+                <td>96</td>
+                <td>Lulus</td>
+                <td class="text-left">Mahasiswa berprestasi</td>
+            </tr>
+            <!-- Baris 4: Rata-rata Kelas -->
+            <tr class="row-avg">
+                <td class="text-left">Rata-rata Kelas</td>
+                <td colspan="3">75,7</td>
+                <td colspan="3">79,8</td>
+                <td colspan="2" class="text-left">77,8 (keseluruhan)</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>

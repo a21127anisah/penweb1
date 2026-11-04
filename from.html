@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Ringkas</title>
+<link rel="stylesheet" href="style.css">
+   
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 10px;
+        }
+        .form-container {
+            background: #ffffff;
+            padding: 15px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 360px; /* Ukuran maksimal diperkecil agar ringkas */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            margin: 0 0 15px 0;
+            font-size: 18px; /* Ukuran judul diperkecil */
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 10px; /* Jarak antar baris dipersempit */
+        }
+        label {
+            display: block;
+            font-size: 12px; /* Ukuran teks label lebih kecil */
+            font-weight: bold;
+            margin-bottom: 3px;
+            color: #555;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 6px 8px; /* Padding diperkecil agar input lebih tipis */
+            font-size: 13px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .radio-group, .checkbox-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            margin-top: 2px;
+        }
+        .radio-item, .checkbox-item {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+        }
+        .radio-item input, .checkbox-item input {
+            margin-right: 4px;
+        }
+        textarea {
+            resize: vertical;
+            height: 50px; /* Tinggi kotak alamat diperkecil */
+        }
+        button {
+            width: 100%;
+            padding: 8px;
+            background-color: #4A90E2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Formulir Pendaftaran</h2>
+    <form>
+        <div class="form-group">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Masukkan email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="text" id="password" name="password" placeholder="Masukkan password">
+        </div>
+
+        <div class="form-group">
+            <label for="umur">Umur</label>
+            <input type="number" id="umur" name="umur" style="width: 70px;">
+        </div>
+
+        <div class="form-group">
+            <label for="tanggal_lahir">Tanggal Lahir</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        </div>
+
+        <div class="form-group">
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+                <label class="radio-item"><input type="radio" name="jk" value="L"> Laki-laki</label>
+                <label class="radio-item"><input type="radio" name="jk" value="P"> Perempuan</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Hobi</label>
+            <div class="checkbox-group">
+                <label class="checkbox-item"><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+                <label class="checkbox-item"><input type="checkbox" name="hobi" value="Coding"> Coding</label>
+                <label class="checkbox-item"><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="agama">Agama</label>
+            <select id="agama" name="agama">
+                <option value="">-- Pilih Agama --</option>
+                <option value="Islam">Islam</option>
+                <option value="Kristen">Kristen</option>
+                <option value="Katolik">Katolik</option>
+                <option value="Hindu">Hindu</option>
+                <option value="Buddha">Buddha</option>
+                <option value="Khonghucu">Khonghucu</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="alamat">Alamat</label>
+            <textarea id="alamat" name="alamat" placeholder="Tulis alamat rumah..."></textarea>
+        </div>
+
+        <button type="submit">Daftar</button>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Riwayat Pendidikan</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 24px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 16px; /* Ukuran teks lebih besar */
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 14px 16px; /* Padding lebih longgar agar tabel terlihat besar */
+            text-align: left;
+        }
+        th {
+            background-color: #bd4f8f;
+            color: white;
+            font-weight: bold;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2; /* Warna selang-seling */
+        }
+        tr:hover {
+            background-color: #ddd; /* Efek hover saat kursor di atas baris */
+        }
+        /* Mengatur lebar spesifik untuk kolom No agar rapi */
+        th:first-child, td:first-child {
+            width: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Riwayat Pendidikan</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Jenjang</th>
+                <th>Nama Sekolah</th>
+                <th>Tahun</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>SDN</td>
+                <td>SDN MARGASARI</td>
+                <td>2014 - 2020</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>MTS</td>
+                <td>MTS AL-ISHLAH</td>
+                <td>2020 - 2023</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>MA</td>
+                <td>MA AL-ISHLAH</td>
+                <td>2023 - 2026</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>S1</td>
+                <td>UNIVERSITAS MANDIRI</td>
+                <td>2026 - Sekarang</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+
+              

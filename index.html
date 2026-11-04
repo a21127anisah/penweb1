@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Datang di Web Saya!</title>
+   <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Menggunakan font yang ramah dan lucu */
+        @import url('https://googleapis.com');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffe5ec 0%, #c9e4de 100%);
+            font-family: 'Quicksand', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #4a4a4a;
+        }
+
+        /* Kontainer Utama berbentuk kartu melengkung */
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 30px;
+            padding: 40px 30px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            max-width: 400px;
+            width: 90%;
+            border: 4px solid #fff;
+        }
+
+        /* Foto Profil dengan bentuk lingkaran bergelombang lembut */
+        .profile-img {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50% 40% 45% 42%;
+            border: 5px solid #ffb3c6;
+            box-shadow: 0 8px 15px rgba(255, 179, 198, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Judul Selamat Datang */
+        h1 {
+            font-family: 'Fredoka One', cursive;
+            color: #ff758f;
+            font-size: 26px;
+            margin: 20px 0 30px 0;
+            text-shadow: 2px 2px 0px #fff;
+        }
+
+        /* Pembungkus Daftar Menu/Tombol */
+        .menu-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        /* Gaya Tombol Menu yang Menggembung & Lucu */
+        .menu-item {
+            background: #fff;
+            color: #555;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            padding: 14px 20px;
+            border-radius: 20px;
+            border: 2px solid #e2e8f0;
+            box-shadow: 0 6px 0px #e2e8f0;
+            transition: all 0.2s ease;
+            display: block;
+        }
+
+        /* Efek Hover Warna-Warni Pastel untuk Setiap Tombol */
+        .menu-item:nth-child(1):hover { background-color: #ffccd5; border-color: #ffb3c6; box-shadow: 0 6px 0px #ffb3c6; color: #ff4d6d; }
+        .menu-item:nth-child(2):hover { background-color: #d8f3dc; border-color: #b7e4c7; box-shadow: 0 6px 0px #b7e4c7; color: #2d6a4f; }
+        .menu-item:nth-child(3):hover { background-color: #e0f2fe; border-color: #bae6fd; box-shadow: 0 6px 0px #bae6fd; color: #0369a1; }
+        .menu-item:nth-child(4):hover { background-color: #fef3c7; border-color: #fde68a; box-shadow: 0 6px 0px #fde68a; color: #b45309; }
+        .menu-item:nth-child(5):hover { background-color: #f3e8ff; border-color: #e9d5ff; box-shadow: 0 6px 0px #e9d5ff; color: #6b21a8; }
+
+        /* Efek ketika tombol diklik (membal ke bawah) */
+        .menu-item:active {
+            transform: translateY(4px);
+            box-shadow: 0 2px 0px #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Ganti nama file foto di bawah ini sesuai dengan file foto Anda -->
+        <img src="filegambar.anisah.jpeg" alt="Foto Profil" class="profile-img">
+        
+        <h1>Selamat Datang Di Web Saya ✨</h1>
+        
+        <div class="menu-list">
+            <a href="profile.html" class="menu-item">🌸 Biodata</a>
+            <a href="educations.html" class="menu-item">📚 Riwayat Pendidikan</a>
+            <a href="from.html" class="menu-item">📸 From </a>
+            <a href="hobbies.html" class="menu-item">💌 Hobi Saya</a>
+            <a href="jadwal.html" class="menu-item">💌 Jadwal Saya</a>
+            <a href="about-me.html" class="menu-item">📅 Jadwal Kuliah</a>
+            <a href="table1.html" class="menu-item" >Table1</a>
+            <a href="table2.html" class="menu-item">Table2</a>
+            <a href="table3.html" class="menu-item">Table3</a>
+            
+            
+            
+
+
+        </div>
+    </div>
+
+</body>
+</html>

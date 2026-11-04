@@ -1,0 +1,105 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* TAMPILAN UTAMA */
+body {
+    font-family: Arial, sans-serif;
+    background: #fff0f5;
+    color: #b03f70;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+/* SAPAAN */
+p a {
+    color: #c45d85;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* FOTO PROFIL */
+img {
+    display: block;
+    width: 180px;
+    height: 230px;
+    object-fit: cover;
+    border: 5px solid white;
+    border-radius: 15px;
+    margin: 25px auto;
+    box-shadow: 0 5px 15px rgba(180, 80, 120, 0.2);
+}
+
+/* JUDUL */
+h1 {
+    color: #c45d85;
+    font-size: 28px;
+    margin: 20px 0 30px;
+}
+
+/* GARIS */
+hr {
+    border: none;
+    height: 2px;
+    background: #f2bfd0;
+    margin: 20px auto;
+}
+
+/* MENU */
+ul {
+    list-style: none;
+    display: grid   
+    grid-template-columns:repeat{3, 1fr};    
+    gap: 12px;
+
+    width:90/;
+    max-width: 750px;
+    margin: 30px auto;
+    padding: 0;
+
+    justify-items:stretch;
+      
+}
+
+/* TOMBOL MENU */
+ul li a {
+    width:100/;
+    margin:0;
+    padding:0;
+    }
+
+/* EFEK HOVER */
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-sizing: border-box;
+    width: 100/;
+    min-height: 48px;
+    padding: 10px;
+
+    background-color: #fff0f5;
+    color: #b84d78;
+
+    border:2px solid #efb5ca;
+    border-radius: 12px;
+
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+
+    transition: 0.3s ease;
+}
+/*EFEK HOVER*/
+ul li a:hover{
+    background-color: #b84db78;
+    color:white;
+    border-color:#b84878;
+    transform:translateY{-2px};
+}
